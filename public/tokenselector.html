@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Andrzej KAufman 260248 Gruppe 3 WS 2021">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mainstyles.css" />
+    <link rel="stylesheet" href="css/tokenselector.css" />
+    <script type="module" src="js/tokenselectorscript.js" defer></script>
+    <script type="module" src="js/modules/HTMLinsert.js" defer></script>
+    <title>Setup WS21 Gruppe 3</title>
+</head>
+
+<body>
+    <div w3-include-html="HTMLmodules/header.html"></div>
+    <main>
+        <section class="mainstage">
+            <div id="container">
+                <article class="selector">
+                    <div style="display: flex; flex-direction: column; justify-content: center;">
+                        <button class="menubutton" id="leftbutton">&#8592</button>
+                    </div>
+                    <div id="token"></div>
+                    <div style="display: flex; flex-direction: column; justify-content: center;">
+                        <button class="menubutton" id="rightbutton">&#8594</button>
+                    </div>
+
+                </article>
+                <div style="display: flex; flex-direction: row; justify-content: center;">
+                    <article id="nameFormInput">
+                        <form name="temp" autocomplete="off">
+
+                            <label for="playername">Name:</label>
+                            <input id="nameInput" type="text" name="playername">
+                        </form>
+
+                    </article>
+                </div>
+
+                <form id="difficulty" style="display:flex; flex-direction: row;">
+
+                    <label class="radioButton" for="easy"> 
+                        <input type="radio" value="easy" id="easy" name="difficulty">
+                        <span class="checkmark"></span>
+                        Easy
+
+                    </label>
+
+                    <label class="radioButton" for="normal">   
+                        <input type="radio" value="normal" id="normal" name="difficulty">
+                        <span class="checkmark"></span>
+                        Normal
+                    </label>
+
+                    <label class="radioButton" for="hard"> 
+                        <input type="radio" value="hard" id="hard" name="difficulty">
+                        <span class="checkmark"></span>
+                        Hard
+                    </label>
+
+                    <label class="radioButton" for="extreme">     
+                        <input type="radio" value="extreme" id="extreme" name="difficulty">
+                        <span class="checkmark"></span>
+                        Extreme
+                    </label>
+
+                </form>
+                <div style="display: flex; flex-direction: row; justify-content: center;">
+                    <button class="menubutton" id="start">Start</button>
+                </div>
+                <form class="algo">
+                    <select id="genselect" name="generator">
+                        <option value="prim">Randomized Prim's Algorithm</option>
+                        <option value="primsc">Prim's Algorithm Short Circuit</option>
+                    </select>
+                </form>
+            </div>
+        </section>
+
+
+    </main>
+    <div style="display: flex; justify-content: center;">
+        <div id="navbar" w3-include-html="HTMLmodules/navigation.html"></div>
+    </div>
+    <div w3-include-html="HTMLmodules/footer.html"></div>
+
+</body>
+
+</html>

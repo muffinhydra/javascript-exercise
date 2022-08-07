@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Andrzej KAufman 260248 Gruppe 3 WS 2021" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/mainstyles.css" />
+    <link rel="stylesheet" href="css/notepadstyles.css" />
+    <script type="module" src="js/notepadscript.js" defer></script>
+    <script type="module" src="js/modules/HTMLinsert.js" defer></script>
+    <title>Notepad WS21 Gruppe 3</title>
+  </head>
+
+  <body>
+    <div w3-include-html="HTMLmodules/header.html"></div>
+    <main>
+      <section class="mainstage">
+        <div style="display: flex; justify-content: center; flex-direction: row">
+          <div id="leftcontainer">
+            <label for="title">Title:</label>
+            <form id="title" autocomplete="off">
+              <input id="inputContent" type="text" name="title" />
+            </form>
+            <label style="padding-left: 10px" for="body">Text:</label>
+            <form id="content" name="body" autocomplete="off">
+              <textarea id="fieldContent" type="text" name="content"></textarea>
+            </form>
+            <button class="menubutton" id="submit">Submit</button>
+          </div>
+          <div id="rightcontainer"></div>
+        </div>
+      </section>
+    </main>
+    <div style="display: flex; justify-content: center">
+      <div id="navbar" w3-include-html="HTMLmodules/navigation.html"></div>
+    </div>
+    <div w3-include-html="HTMLmodules/footer.html"></div>
+  </body>
+</html>

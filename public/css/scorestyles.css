@@ -1,0 +1,25 @@
+/*@Author: Andrzej Kaufman WS21 Gruppe 3*/
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 0.8em;
+    width: 100%;
+}
+
+tr {
+    border-bottom: rgb(241, 241, 163) 0.125em solid;
+}
+
+tr:last-child {
+    border: none;
+}
+
+.mainstage {
+    width: 70%;
+    padding-left: 50px;
+}
+
+#tableanchor {
+    overflow: auto;
+}

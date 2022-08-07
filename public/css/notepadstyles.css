@@ -1,0 +1,94 @@
+/*@Author: Andrzej Kaufman WS21 Gruppe 3*/
+
+#leftcontainer,
+#rightcontainer {
+    color: yellow;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
+
+#leftcontainer {
+    width: 600px;
+}
+
+#title input {
+    color: yellow;
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    text-decoration: none;
+    text-shadow: 0 0 0.25em rgba(255, 255, 255, 0.842), 0 0 0.8em lightsteelblue;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: lightsteelblue;
+    height: 100%;
+    width: 100%;
+}
+
+#leftcontainer input:focus {
+    outline: none;
+}
+
+#leftcontainer form {
+    height: fit-content;
+    border: yellow 0.125em solid;
+    border-radius: 0.25em;
+    box-shadow: inset 0 0 0.2em yellow, 0 0 0.7em yellow;
+    position: relative;
+    color: yellow;
+}
+
+#leftcontainer textarea {
+    color: yellow;
+    border: none;
+    font-size: 1em;
+    text-decoration: none;
+    text-shadow: 0 0 0.25em rgba(255, 255, 255, 0.842), 0 0 0.8em lightsteelblue;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: lightsteelblue;
+    resize: none;
+    background-color: transparent;
+    height: 200px;
+    width: 600px;
+}
+
+#leftcontainer textarea:focus {
+    outline: none;
+}
+
+#rightcontainer {
+    font-size: 0.6em;
+    height: 500px;
+    padding-left: 50px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+#rightcontainer button {
+    font-size: 0.6em;
+    width: 70px;
+}
+
+#rightcontainer time {
+    font-size: 1em;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#textfields {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+#rightcontainer span {
+    width: 600px;
+}
+
+.mainstage {
+    padding-left: 50px
+}

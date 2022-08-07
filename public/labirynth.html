@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Andrzej KAufman 260248 Gruppe 3 WS 2021" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/mainstyles.css" />
+    <link rel="stylesheet" href="css/labstyles.css" />
+    <script type="module" src="js/labirynthscript.js" defer></script>
+    <script type="module" src="js/modules/HTMLinsert.js" defer></script>
+    <title>Labyrinth of Time WS21 Gruppe 3</title>
+  </head>
+
+  <body>
+    <div w3-include-html="HTMLmodules/header.html"></div>
+    <main>
+      <div id="sidebar"></div>
+      <section class="mainstage">
+        <article class="labirynth">
+          <div id="spielflaeche"></div>
+        </article>
+      </section>
+      <div id="sidebar">
+        <div style="display: flex; flex-direction: column; width: 180px">
+          <article class="sidepanel">
+            <article>
+              <h3>PLAYER:</h3>
+              <span id="playername"></span>
+            </article>
+
+            <article>
+              <h3>SCORE</h3>
+              <span id="highscore"></span>
+            </article>
+
+            <article>
+              <h3>LEVEL</h3>
+              <span id="level"></span>
+            </article>
+
+            <article style="padding-bottom: 20px">
+              <h3>TIME</h3>
+              <span id="timer"></span>
+            </article>
+          </article>
+          <div style="padding-top: 20px">
+            <button class="menubutton" id="pause" onclick="pauseGame()">Pause</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div style="display: flex; justify-content: center">
+      <div id="navbar" w3-include-html="HTMLmodules/navigation.html"></div>
+    </div>
+    <div w3-include-html="HTMLmodules/footer.html"></div>
+  </body>
+</html>

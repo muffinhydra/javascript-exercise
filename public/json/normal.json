@@ -1,0 +1,12 @@
+{
+  "time": 3,
+  "size": {
+    "x": 39,
+    "y": 19
+  },
+  "finish": {
+    "x": 37,
+    "y": 17
+  },
+  "items": ["crystal_1", "crystal_1", "crystal_2", "crystal_3", "crystal_4"]
+}

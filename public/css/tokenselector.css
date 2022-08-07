@@ -1,0 +1,159 @@
+/*@Author: Andrzej Kaufman WS21 Gruppe 3*/
+
+#token {
+    width: 100px;
+    height: auto;
+    background-color: transparent;
+    color: yellow;
+    border: yellow 0.125em solid;
+    padding: .25em 1em;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.25em rgba(255, 255, 255, 0.842), 0 0 0.8em maroon;
+    box-shadow: inset 0 0 0.7em yellow, 0 0 0.7em yellow;
+    position: relative;
+    transition: background-color 100ms linear;
+}
+
+#token img {
+    width: 100px;
+    height: auto;
+}
+
+.selector {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+}
+
+#leftbutton,
+#rightbutton {
+    height: 50%;
+    width: 70px;
+    text-align: center;
+    padding-inline: 10%;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    width: 400px;
+}
+
+#container form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+}
+
+#start {
+    width: 5em;
+}
+
+#nameFormInput {
+    border: yellow 0.125em solid;
+    padding: .25em 0.25em;
+    border-radius: 0.25em;
+    box-shadow: inset 0 0 0.2em yellow, 0 0 0.7em yellow;
+    position: relative;
+    color: yellow;
+    width: 100%;
+}
+
+#nameFormInput input {
+    color: yellow;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    text-decoration: none;
+    text-shadow: 0 0 0.25em rgba(255, 255, 255, 0.842), 0 0 0.8em lightsteelblue;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: lightsteelblue;
+    width: 100%;
+}
+
+#nameFormInput input:focus {
+    outline: none;
+}
+
+
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio*/
+
+.radioButton {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radioButton input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: yellow solid;
+    box-shadow: inset 0 0 0.2em yellow, 0 0 0.7em yellow;
+}
+
+
+/* When the radio button is checked, add a blue background */
+
+.radioButton input:checked~.checkmark {
+    background-color: transparent;
+    box-shadow: inset 0 0 0.2em yellow, 0 0 0.7em yellow;
+    border: yellow solid;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    box-shadow: inset 0 0 0.2em yellow, 0 0 0.7em yellow;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+
+.radioButton input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the indicator (dot/circle) */
+
+.radioButton .checkmark:after {
+    top: 0.19em;
+    left: 0.19em;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: yellow;
+}
+
+.algo {
+    text-shadow: none;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: none;
+}
